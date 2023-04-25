@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant's portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d32a1bf013.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-100 font-light" id="home">
+
+    <div class=" flex flex-row justify-center h-14 shadow-sm sticky top-0 z-10 bg-gray-100 ">
+        <div class="absolute text-2xl top-1/4 left-5 space-x-2 hidden md:block">
+            <a href="https://github.com/gbarn360" target="_blank"><i class="fa fa-github text-gray-700" id="icon"
+                    aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/in/grant-barnhart5287" target="_blank"><i
+                    class="fa fa-linkedin-square text-gray-700" id="icon" aria-hidden="true"></i></a>
+        </div>
+        <div class=" flex-1  ">
+            <ul class="flex flex-row   justify-center">
+                <li class=" mt-3 m-4"><a href="#home" class="no-underline text-gray-900">Home</a></li>
+                <li class=" mt-3 m-4"><a href="#about" class="no-underline text-gray-900">About</a></li>
+                <li class=" mt-3 m-4"><a href="#projects" class="no-underline text-gray-900">Projects</a></li>
+                <li class=" mt-3 m-4"><a href="#skills" class="no-underline text-gray-900">Skills</a></li>
+                <li class=" mt-3 m-4"><a href="#contacts" class="no-underline text-gray-900">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="min-h-screen ">
+
+        <div class="md:grid md:grid-cols-2"> <!--responsive design, collapse left and right for mobile-->
+
+            <div class="mt-12 flex flex-col items-center md:items-start h-1/2"> <!--left home-->
+                <div class="  flex flex-col items-center md:flex-row md:space-x-4 md:pl-10 md:pt-20 md:mt-10">
+                    <!--greetings -->
+                    <h4 class="text-base md:mt-8 md:text-2xl font-light ">Hi, I'm</h4>
+                    <h1 class="text-4xl md:text-7xl text-red-500">Grant Barnhart</h1>
+                </div>
+                <h3 class="text-base md:pl-28 md:text-2xl md:pt-4 text-gray-700 font-light">&#x2022; web developer
+                </h3>
+                <h3 class="text-base md:pl-28 md:text-2xl md:pt-4 text-gray-700 font-light">&#x2022; software engineer
+                </h3>
+                <h3 class="text-base md:pl-28 md:text-2xl md:pt-4 text-gray-700 font-light">&#x2022; life-long student
+                </h3>
+
+            </div>
+            <div class="flex items-center"> <!--right home-->
+                <div class="flex items-center"> <!--right home-->
+                    <div class="m-8 flex justify-center "> <!--image container-->
+                        <img class="w-2/3 rounded-2xl " src="../pictures/picture2.jpg" alt="selfie" />
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="relative md:absolute md:top-full" id="about"></div>
+            <div class="hidden mt-20 justify-center md:flex md:justify-center"> <!--about me left-->
+
+                <img class="w-4/5 h-5/6 rounded-2xl  "
+                    src="https://i.pinimg.com/originals/d4/ab/d1/d4abd13a23e36edbcb270ed9560facd8.jpg"
+                    alt="office picture" />
+
+            </div>
+            <div class="mt-20 flex  justify-center"> <!-- about me right-->
+                <div class="flex flex-col items-center w-2/3 md:items-start"> <!--about section-->
+                    <h1 class="border-b-2 border-b-gray-300 pb-2 w-48 mb-3 text-center text-gray-700 ">About me</h1>
+                    <!--about header-->
+                    <p class="">As a soon-to-be graduate of Penn State University, I am enthusiastic about joining the
+                        software
+                        industry and utilizing my skills to develop and maintain software. My passion for software
+                        development spans across various stages, including conception, design, implementation, and
+                        maintenance. I particularly enjoy collaborating with others and brainstorming innovative
+                        solutions to complex problems. Moreover, I am proficient in both frontend and backend
+                        development, making me versatile and adaptable to different project requirements.</p>
+
+                    <div class=" w-20 flex justify-center bg-neutral-200 rounded-md">
+                        <button class="p-2"
+                            onclick="window.open(`https://drive.google.com/file/d/1LAf12sdDPqlxWmb-U6UyeYqNFM9VBCck/view?usp=sharing`)">Resume</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="mt-5 flex justify-center md:justify-start md:ml-20 ">
+                <!--project 1 left-->
+                <div class="flex flex-col items-center md:items-start ">
+                    <div class="mb-20" id="projects"></div>
+                    <div class="flex flex-col items-center w-2/3 md:items-start "> <!--project header section-->
+                        <h1 class="border-b-2 border-b-gray-300 pb-2 w-48 mb-3 text-center text-gray-700 ">Projects</h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-center mt-20 sticky top-28 ">
+                        <div class="flex flex-row justify-center space-x-3">
+                            <h1 class="text-lg font-bold text-gray-700 ">Chat App</h1>
+                            <h2 class="text-lg" class="githubProj"><a href="https://github.com/gbarn360/chatApp"
+                                    target="_blank"><i id="icon" class="fa fa-github text-gray-700"
+                                        aria-hidden="true"></i></a></h2>
+                        </div>
+                        <p>side project | personal</p>
+                        <p class="w-3/4 ">My objective for this project was to develop a chat application
+                            that
+                            facilitates
+                            one-on-one messaging as well as group chats in real-time. To accomplish this, I leveraged
+                            React.JS
+                            and Node.JS with the Express framework, and
+                            integrated
+                            Socket.IO for seamless real-time
+                            messaging.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="md:mt-28 flex justify-center"> <!--project 1 right-->
+                <div class="mt-32 flex justify-center flex-col items-center">
+                    <img class="w-10/12 h-64 rounded-2xl my-1 shadow-lg " src="../pictures/chat app/signIn Screen.png"
+                        alt="chat app sign-in" />
+
+                    <img class="w-10/12 h-64 rounded-2xl my-5 shadow-lg"
+                        src="../pictures/chat app/home with friends.png" alt="chat app home with friends" />
+
+                    <img class="w-10/12 h-64 rounded-2xl my-1 shadow-lg" src="../pictures/chat app/group screen.png"
+                        alt="chat app group screen" />
+
+                    <img class="w-10/12 h-64 rounded-2xl my-5 shadow-lg" src="../pictures/chat app/adding friends.png"
+                        alt="chat app adding friends" />
+                </div>
+
+
+            </div>
+
+            <div class="mt-10 flex justify-center md:justify-start md:ml-20"> <!--project 2 left-->
+                <div class="flex flex-col items-center md:items-start ">
+
+                    <div class="flex flex-col justify-center items-center mt-20 sticky top-28">
+                        <div class="flex flex-row justify-center space-x-3">
+                            <h1 class="text-lg font-bold text-gray-700">Ecommerce Shoe Store</h1>
+                            <h2 class="text-lg" class="githubProj"><a
+                                    href="https://github.com/Vasu-Patel-007/SWENG465.git" target="_blank"><i id="icon"
+                                        class="fa fa-github text-gray-700" aria-hidden="true"></i></a></h2>
+                        </div>
+                        <p>school project | group</p>
+                        <p class="w-3/4">In collaboration with three other engineering students, I worked on a project
+                            to
+                            create an application that enables users to browse through shoe entries stored in a
+                            database, add or
+                            remove them from their cart, and optionally create an account and sign in. For our
+                            tech-stack, we
+                            employed MERN (MongoDB, Express, React.JS, Node.JS) and also integrated
+                            Three.JS for shoe modeling.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="md:mt-20 flex justify-center"> <!--project 2 right-->
+                <div class="mt-12 flex justify-center flex-col items-center">
+                    <img class=" w-10/12 h-64 rounded-2xl my-1" src="../pictures/sike wear/sign in.png"
+                        alt="Ecommerce shoe store sign in " />
+
+                    <img class=" w-10/12 h-64 rounded-2xl my-5" src="../pictures/sike wear/home.png"
+                        alt="Ecommerce shoe store home" />
+
+                    <img class=" w-10/12 h-64 rounded-2xl my-1" src="../pictures/sike wear/shop.png"
+                        alt="Ecommerce shoe store shop" />
+
+                    <img class=" w-10/12 h-64 rounded-2xl my-5" src="../pictures/sike wear/shoe.png"
+                        alt="Ecommerce shoe store shoe" />
+
+                    <img class=" w-10/12 h-64 rounded-2xl my-5" src="../pictures/sike wear/checkout.png"
+                        alt="Ecommerce shoe store checkout" />
+                </div>
+            </div>
+
+
+
+
+
+            <div class="mt-10 flex justify-center md:justify-start md:ml-20"> <!--project 2 left-->
+                <div class="flex flex-col items-center md:items-start ">
+
+                    <div class="flex flex-col justify-center items-center mt-20 sticky top-28">
+                        <div class="flex flex-row justify-center space-x-3">
+                            <h1 class="text-lg font-bold text-gray-700">Weather App</h1>
+                            <h2 class="text-lg" class="githubProj"><a href="https://github.com/gbarn360/Weather-App"
+                                    target="_blank"><i id="icon" class="fa fa-github text-gray-700"
+                                        aria-hidden="true"></i></a></h2>
+                        </div>
+                        <p>side project | personal</p>
+                        <p class="w-3/4">This project was my first attempt
+                            at creating a full-stack application that that employed third-party APIs to retrieve
+                            coordinate
+                            information for a given city and present basic weather information for that location. For
+                            tech-stack, I utilized HTML , CSS, Javascript, Node.JS, and
+                            >Express framework.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="md:mt-10 flex justify-center"> <!--project 2 right-->
+                <div class="mt-12 flex justify-center flex-col items-center">
+                    <img class=" w-10/12 h-64 rounded-2xl my-1" src="../pictures/weatherApp/home.png"
+                        alt="weather app home " />
+
+                    <img class=" w-10/12 h-64 rounded-2xl my-5" src="../pictures/weatherApp/home2.png"
+                        alt="weather app home2" />
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mb-20" id="skills"></div>
+
+        <div class="md:mt-20 flex justify-center "> <!--skills -->
+
+            <div class="flex flex-col  items-center  w-full"> <!--skills center -->
+                <div>
+                    <h1 class="border-b-2 border-b-gray-300 pb-2 w-48 mb-3 text-center text-gray-700">Skills</h1>
+                </div>
+                <div class="flex flex-col items-center text-center md:grid md:grid-cols-4 ">
+
+                    <div class=" p-3 rounded-2xl m-3 w-2/3 ">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        <h1 class="text-xl mt-3 text-gray-700">React JS / React Native</h1>
+
+                    </div>
+                    <div class="  p-3 rounded-2xl m-3 w-2/3 ">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                        <h1 class="text-xl mt-3 text-gray-700">tailwind</h1>
+                    </div>
+
+                    <div class="  p-3 rounded-2xl m-3 w-2/3">
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+
+                        <h1 class="text-xl mt-3 text-gray-700">Typescript</h1>
+                    </div>
+                    <div class="  p-3 rounded-2xl m-3 w-2/3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                        <h1 class="text-xl mt-3 text-gray-700">python</h1>
+                    </div>
+                    <div class="  p-3 rounded-2xl m-3 w-2/3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                        <h1 class="text-xl mt-3 text-gray-700">Java</h1>
+                    </div>
+
+
+                    <div class="  p-3 rounded-2xl m-3 w-2/3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+
+                        <h1 class="text-xl mt-4 text-gray-700">Node JS</h1>
+                    </div>
+                    <div class="  p-3 rounded-2xl m-3 w-2/3">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                        <h1 class="text-xl mt-3text-gray-700">MongoDB</h1>
+                    </div>
+                    <div class="  p-3 rounded-2xl m-3 w-2/3">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" />
+                        <h1 class="text-xl mt-3 text-gray-700">SQL Server</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="md:mt-16 flex flex-col items-center h-96 "> <!--Contact -->
+            <div>
+                <h1 class="border-b-2 border-b-gray-300 pb-2 w-48 mb-3 text-center text-gray-700">Contact</h1>
+            </div>
+            <div class="relative mt-10" id="contacts">
+                <div class="flex flex-col space-y-3">
+                    <div class="flex flex-row items-center space-x-5">
+                        <i class="fa-solid fa-envelope text-2xl"></i>
+                        <h5> gbarn360@gmail.com</h5>
+                    </div>
+                    <div class="flex flex-row items-center space-x-5">
+                        <i class="fa-solid fa-phone text-2xl flex"></i>
+                        <h5>724 344-1626</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
